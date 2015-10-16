@@ -1,0 +1,65 @@
+<table class="content" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2" style="width: 640px; max-width: 640px;">
+  <tr>
+    <td bgcolor="#f2f2f2" valign="top">
+      <table align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2" style="width:640px;" class="mobile-padding-bottom-10 mobile-width-320">
+        <tr>
+          <td style="color:#91a4b1; font-size:12px; font-family:Arial, Verdana, Sans-serif; line-height:30px;text-align:left" valign="top" class="mobile_align_left mobile-padding-left-10"></td>
+        </tr>
+      </table>
+      <br />
+      <table align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2" style="width: 640px;" class="mobile-width-320">
+        <tr>
+          <td width="10"></td>
+          <td align="left" style="color:#91a4b1; font-size:11px; line-height:17px; -webkit-text-size-adjust:none;font-family:Arial, Verdana, Sans-serif ;">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="70" valign="middle" style="color:#91a4b1; font-size:11px; line-height:17px; -webkit-text-size-adjust:none;font-family:Arial, Verdana, Sans-serif ;">
+                  Follow us on:</td>
+                <td valign="middle">
+                  <a name="twitter_footer" href="https://twitter.com/fordindia/" target="_blank" style="text-decoration:none;"><img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/twitter_icon.gif" border="0" alt="Twitter" />
+                  </a>
+                  <a name="facebook_footer" href="https://www.facebook.com/FordIndia/" target="_blank" style="text-decoration:none;"><img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/facebook-icon.gif" border="0" alt="Facebook" />
+                  </a>
+                  <a name="instagramm_footer" href="http://www.instagram.com/fordindia" target="_blank" style="text-decoration:none;"><img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/insta-icon.gif" border="0" alt="Instagramm" />
+                  </a>
+                  <a name="youtube_footer" href="http://www.youtube.com/fordindiavideos" target="_blank" style="text-decoration:none;"><img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/youtube-icon.gif" border="0" alt="Instagramm" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <%InsertIf expression="${((user.CustomAttribute['Offerstatus'] == 'Nooffer'))}" id="OfferstatusX_0" %>
+
+            <br />
+
+            <%/InsertIf%>
+
+            <%InsertElse expression="${((user.CustomAttribute['Offerstatus'] == 'With_Battery'))}" id="OfferstatusX_1" %>
+
+            <br />
+            <br />*T&C apply. **MRP is at Delhi. ***The offer mentioned includes ₹500 buy back offer also.
+            <br />
+
+            <%/InsertElse%>
+
+            <%InsertElse expression="${((user.CustomAttribute['Offerstatus'] == 'With_Tyre_And_Battery'))}" id="OfferstatusX_2" %>
+
+            <br />
+            <br />*T&C apply. **MRP is at Delhi.
+            <br />
+
+            <%/InsertElse%>
+            
+            <br />You may <a href="<%unsubscribe_link_text%>" style="color:#91a4b1;text-decoration:underline;">unsubscribe</a> from this mailing list at any time.
+            <br />To ensure that you continue receiving our emails, please add <a href="mailto:fordindia@crm.fordind.com" style="color:#91a4b1;text-decoration:underline;">fordindia@crm.fordind.com</a> to your address book or safe list. Ford India Pvt. Ltd. 3rd Floor. Building No. 10, Tower C. DLF Phase II, Gurgaon-122002
+            <br>
+            <br>Copyright 2015 Ford India Pvt Ltd. All Rights Reserved. <a name="privacy_disclaimer" href="http://www.india.ford.com/privacy-disclaimer?emailid=EDM_<%${user.CustomAttribute['DMCDATE']}%>_APMKTC4L_<%${user.CustomAttribute['DMCCAMPAIGN']}%>_privacy-disclaimer" style="color:#91a4b1;text-decoration:underline;">Privacy & Disclaimer</a>
+            <br /> If you're having difficulty viewing this email, <span class="mobile-display-block"></span><a href="{{ .Params.online }}" style="color:#91a4b1; text-decoration:underline"><span style="color:#91a4b1"></span>go to the web version</span></a>
+            <br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

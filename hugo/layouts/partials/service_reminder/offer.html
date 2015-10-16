@@ -1,0 +1,302 @@
+<%InsertIf expression="${((user.CustomAttribute['Offerstatus'] == 'Nooffer'))}" id="OfferstatusX_0" %>
+
+<table></table>
+
+<%/InsertIf%>
+
+<%InsertElse expression="${((user.CustomAttribute['Offerstatus'] == 'With_Battery'))}" id="OfferstatusX_1" %>
+
+<table class="content" align="center" border="0" bgcolor="#91a4b1" cellpadding="0" cellspacing="0" style="width: 640px; max-width: 640px;">    
+  <tr>
+    <td height="30" bgcolor="#91a4b1"> </td>
+  </tr>
+  <tr>
+    <td bgcolor="#91a4b1" class="mobile-padding-bottom-10" align="center" style="text-align:center"> 
+     <table  align="center" cellpadding="0" cellspacing="0" border="0" width="90%">
+      <tr>
+        <td class="mobile_align_center">  
+            {{ "<!--[if (gte mso 9)|(IE)]>" | safeHtml }}
+            <table width="300" align="center" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  {{ "<![endif]-->" | safeHtml }}
+                  <table class="mobile-margin-bottom-20 mobile-width-320" width="500" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                      <td align="center">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/battery_icon_gray.png" style="height:60px;" /><br /><br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="mobile_align_center" align="center" style="font-family: Arial, Helvetica, sans-serif; color:#333333; font-size:16px;" >
+                        <span style="font-size:30px; color:#ffffff; font-family:Arial, Helvetica, sans-serif ;" class="mobile-font-size-24">Save &#x20B9;1000*</span>
+                        <br />
+                        <br />
+                        You have been selected to save &#x20B9;1000 on a new battery for your Ford &lt;%${user.CustomAttribute[ 'Selected_Vehicle']}%>! For a limited time, you can purchase a new battery for only &#x20B9;2904, instead of the regular price of &#x20B9;3904. Hurry and visit your local dealer today! Offer ends 31st October 2015.
+                      </td>
+                    </tr>
+                  </table>
+                {{ "<!--[if (gte mso 9)|(IE)]>" | safeHtml }}
+                </td>
+              </tr>
+            </table>
+            {{ "<![endif]-->" | safeHtml }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr> 
+  <tr>
+    <td height="30" bgcolor="#91a4b1"  class="mobile-display-none"></td>
+  </tr>
+</table>
+
+<%/InsertElse%>
+
+<%InsertElse expression="${((user.CustomAttribute['Offerstatus'] == 'With_Tyre_And_Battery'))}" id="OfferstatusX_2" %>
+
+<table class="content" align="center" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="width: 640px; max-width: 640px;">
+  <tr>
+    <td bgcolor="#ffffff" class="mobile-padding-bottom-10" align="center" style="text-align:center"> 
+     <table  align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td class="mobile_align_center">  
+            {{ "<!--[if (gte mso 9)|(IE)]>" | safeHtml }}
+            <table width="300" align="center" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  {{ "<![endif]-->" | safeHtml }}
+                  <table class="mobile-margin-bottom-20 mobile-width-320" width="640" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                      <td>
+                        <img width="100%" border="0" class="mobile-display-none" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/tyres_battery_banner.gif" />
+                          {{ "<!--[if !mso]><!-->" | safeHtml }}
+                          <div style="width:0px; height:0px; display:none;mso-hide: all; overflow:hidden;max-height:0px; text-align:center" class="mobile-height-auto mobile-width-320 mobile-overflow-visible mobile-display-block">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/tyres_battery_banner.gif" width="100%" border="0" style="display:none;" class="mobile-display-block" />
+                          </div>
+                          {{ "<!--<![endif]-->" | safeHtml }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="mobile_align_center mobile-font-size-24" align="center" style="font-size:30px; color:#1b394e; font-family:Arial, Helvetica, sans-serif ;" >
+                        <br>
+                        Tyres and Battery Event
+                        <span style="font-size:12px;line-height:14px;font-style:italic;"><br><br>August - October 2015<br></span>
+                        <span style="font-size:12px;line-height:14px;"><br>Visit your nearest service centre to get great offers on leading tyre brands and Ford Motorcraft batteries.</span>
+                        <br>
+                        <br>
+                        Offers*
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#ffffff" align="center" style="max-width: 600;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="600" class="mobile-display-none">
+                          <tr>
+                            <td>
+                              <table style="padding:0px;" class="mobile-width-320" border="0" cellpadding="0" cellspacing="0" align="left" width="285">
+                                <tr height="20">
+                                  <td>
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/tyre_icon.png" height="30" class="mobile-height-auto mobile-width-60pc" />
+                                  </td>
+                                </tr>
+                                <tr height="10">
+                                  <td>
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top">
+                                    <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+                                      <tr>
+                                        <td align="center" style="font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;padding:0 10px; font-style:italic;" >
+                                          <span style="font-size:18px;" class="mobile-font-size-24">Tyre</span>
+                                          <br>
+                                          <br>Free wheel alignment and car top wash
+                                          <br>Free 24x7 Tyre Assistance
+                                          <br>Unmatched warranty (Incl External damages) only on selected brands
+                                          <br>
+                                          <br>- Figo/Classic -
+                                          <br>Buy 1 tyre and get 30% off on 2nd tyre          
+                                          <br>Buy 3 tyres and get 60% off on 4th tyre      
+                                          <br>
+                                          <br>- Eco Sport Titanium -
+                                          <br>Buy 1 tyre and get 20% off on 2nd tyre
+                                          <br>Buy 3 tyres and get 40% off on 4th tyre
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              {{ "<!--[if mso]>" | safeHtml }}
+                                 </td><td bgcolor="#ffffff" >
+                              {{ "<![endif]-->" | safeHtml }}
+                               <table style="padding:0px;" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                  <td>
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="30" height="1" alt="" />
+                                  </td>
+                                </tr>
+                              </table>
+                              {{ "<!--[if mso]>" | safeHtml }}
+                                 </td><td bgcolor="#ffffff" >
+                              {{ "<![endif]-->" | safeHtml }}
+                              <table style="padding:0px;" class="mobile-width-320" border="0" cellpadding="0" cellspacing="0" align="left" width="285">
+                                <tr height="20">
+                                  <td>
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/battery_icon.gif" height="30" class="mobile-height-auto mobile-width-60pc" />
+                                  </td>
+                                </tr>
+                                <tr height="10">
+                                  <td>
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top">
+                                    <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+                                      <tr>
+                                        <td align="center" style="font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;padding:0 10px; font-style:italic;" >
+                                          <span style="font-size:18px;" class="mobile-font-size-24">Battery</span>
+                                          <br>
+                                          <br>&#x20B9;500 Buyback on Battery
+                                          <br>
+                                          <br>1 to 3 Years Warranty Options for Battery
+                                          <br>
+                                          <br>Free 24x7 Battery Assistance
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <br>&nbsp;
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+
+                            </td>
+                          </tr>
+                        </table>
+                        {{ "<!--[if !mso]><!-->" | safeHtml }}
+                        <div style="width:1px; height:1px; overflow:hidden;mso-hide:all; max-height:1px; display:none" class="mobile-height-auto mobile-width-320 mobile-display-block mobile-overflow-visible">
+                          <table border="0" cellpadding="0" cellspacing="0" align="center" width="400" style="display:none;mso-hide:all;" class="mobile-display-block">
+                            <tr>
+                              <td>
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" style="display:none;mso-hide:all;" class="mobile-display-block">
+                                  <tr height="20">
+                                    <td align="center" valign="top">
+                                      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="400" height="1" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/tyre_icon.png" height="30" />
+                                    </td>
+                                  </tr>
+                                  <tr height="10">
+                                    <td align="center" valign="top">
+                                      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" valign="top">
+                                      <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+                                        <tr>
+                                          <td align="center" style="font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;padding:0 10px; font-style:italic;" >
+                                            <span style="font-size:18px;" class="mobile-font-size-24">Tyre</span>
+                                            <br>
+                                            <br>Free wheel alignment and car top wash
+                                            <br>Free 24x7 Tyre Assistance
+                                            <br>Unmatched warranty (Incl External damages) only on selected brands
+                                            <br>
+                                            <br>- Figo/Classic -
+                                            <br>Buy 1 tyre and get 30% off on 2nd tyre          
+                                            <br>Buy 3 tyres and get 60% off on 4th tyre      
+                                            <br>
+                                            <br>- Eco Sport Titanium -
+                                            <br>Buy 1 tyre and get 20% off on 2nd tyre
+                                            <br>Buy 3 tyres and get 40% off on 4th tyre
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" style="display:none;mso-hide:all;" class="mobile-display-block">
+                                  <tr height="20">
+                                    <td align="center" valign="top">
+                                      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="400" height="1" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/battery_icon.gif" height="30" />
+                                    </td>
+                                  </tr>
+                                  <tr height="10">
+                                    <td align="center" valign="top">
+                                      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" valign="top">
+                                      <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+                                        <tr>
+                                          <td align="center" style="font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;padding:0 10px; font-style:italic;" >
+                                            <span style="font-size:18px;" class="mobile-font-size-24">Battery</span>
+                                            <br>
+                                            <br>&#x20B9;500 Buyback on Battery
+                                            <br>
+                                            <br>1 to 3 Years Warranty Options for Battery
+                                            <br>
+                                            <br>Free 24x7 Battery Assistance
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>&nbsp;
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        {{ "<!--<![endif]-->" | safeHtml }}
+                      </td>
+                    </tr>
+                  </table>
+                {{ "<!--[if (gte mso 9)|(IE)]>" | safeHtml }}
+                </td>
+              </tr>
+            </table>
+            {{ "<![endif]-->" | safeHtml }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr> 
+  <tr>
+    <td height="30" bgcolor="#ffffff"  class="mobile-display-none"></td>
+  </tr>
+</table>
+
+<%/InsertElse%>

@@ -1,0 +1,102 @@
+<table class="content" align="center" border="0" bgcolor="#1b394e" cellpadding="0" cellspacing="0" style="width: 640px; max-width: 640px;">    
+  <tr>
+    <td height="30" bgcolor="#1b394e"> </td>
+  </tr>
+  <tr>
+    <td bgcolor="#1b394e" class="mobile-padding-bottom-10" align="center" style="text-align:center"> 
+     <table  align="center" cellpadding="0" cellspacing="0" border="0" width="90%">
+      <tr>
+        <td class="mobile_align_center">  
+            {{ "<!--[if (gte mso 9)|(IE)]>" | safeHtml }}
+            <table width="300" align="center" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  {{ "<![endif]-->" | safeHtml }}
+                  <table class="mobile-margin-bottom-20 mobile-width-320" width="572" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                      <td class="mobile_align_center mobile-font-size-24" align="center" style="font-size:30px; color:#ffffff; font-family:Arial, Helvetica, sans-serif ;" >
+                        Your <%${user.CustomAttribute[ 'Selected_Vehicle']}%>'s Health Status
+                      </td>
+                    </tr>
+                    <tr height="20">
+                      <td align="left" valign="top">
+                        <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#1b394e" align="center" style="max-width: 572;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="572" class="mobile-display-none">
+                          <tr>
+                            <td>
+                              
+                              {{ partial "service_reminder/lights/brakes_desktop.html" . }}
+
+                              {{ "<!--[if mso]>" | safeHtml }}
+                                 </td><td bgcolor="#1b394e" >
+                              {{ "<![endif]-->" | safeHtml }}
+                              <table style="padding:0px;" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                  </td>
+                                </tr>
+                              </table>
+                              {{ "<!--[if mso]>" | safeHtml }}
+                                 </td><td bgcolor="#1b394e" >
+                              {{ "<![endif]-->" | safeHtml }}
+                              
+                              {{ partial "service_reminder/lights/tyres_desktop.html" . }}
+
+                              {{ "<!--[if mso]>" | safeHtml }}
+                                 </td><td bgcolor="#1b394e" >
+                              {{ "<![endif]-->" | safeHtml }}
+                              <table style="padding:0px;" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+                                  </td>
+                                </tr>
+                              </table>
+                              {{ "<!--[if mso]>" | safeHtml }}
+                                 </td><td bgcolor="#1b394e" >
+                              {{ "<![endif]-->" | safeHtml }}
+
+                              {{ partial "service_reminder/lights/battery_desktop.html" . }}
+
+                            </td>
+                          </tr>
+                        </table>
+                       {{ "<!--[if !mso]><!-->" | safeHtml }}
+                        <div style="width:1px; height:1px; overflow:hidden;mso-hide:all; max-height:1px; display:none" class="mobile-height-auto mobile-width-320 mobile-display-block mobile-overflow-visible">
+                          <table border="0" cellpadding="0" cellspacing="0" align="center" width="262" style="display:none;mso-hide:all;" class="mobile-display-block">
+                            <tr>
+                              <td>
+                                
+                                {{ partial "service_reminder/lights/brakes_mobile.html" . }}
+
+                                {{ partial "service_reminder/lights/tyres_mobile.html" . }}
+                                
+                                {{ partial "service_reminder/lights/battery_mobile.html" . }}
+
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        {{ "<!--<![endif]-->" | safeHtml }}
+                      </td>
+                    </tr>
+                  </table>
+                {{ "<!--[if (gte mso 9)|(IE)]>" | safeHtml }}
+                </td>
+              </tr>
+            </table>
+            {{ "<![endif]-->" | safeHtml }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr> 
+  <tr>
+    <td height="30" bgcolor="#1b394e"  class="mobile-display-none"></td>
+  </tr>
+</table> 

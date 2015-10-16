@@ -1,0 +1,116 @@
+<%InsertIf expression="${((user.CustomAttribute['Brake'] == 'G'))}" id="BrakeX_0" %>
+
+<table style="padding:0px;" class="mobile-width-320" bgcolor="#1bbc9b" border="0" cellpadding="0" cellspacing="0" align="left" width="190">
+  <tr height="20">
+    <td align="left" valign="top">
+      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/brakes_icon_black.png" height="30" class="mobile-height-auto mobile-width-60pc" />
+    </td>
+  </tr>
+  <tr height="10">
+    <td align="left" valign="top">
+      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+    </td>
+  </tr>
+  <tr height="170">
+    <td align="center" valign="top">
+      <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+        <tr>
+          <td align="center" style="font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;padding-right: 10px;padding-left: 10px;" >
+            <span style="font-weight:bold;font-size:18px" class="mobile_align_center mobile-font-size-24">Brakes</span>
+            <br>
+            <br>
+            <span style="font-size:18px" class="mobile_align_center mobile-font-size-24">Good to go</span>
+            <br>
+            <br>
+            <span>Keep up the regular maintenance.</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<%/InsertIf%>
+
+<%InsertElse expression="${((user.CustomAttribute['Brake'] == 'R'))}" id="BrakeX_1" %>
+
+<table style="padding:0px;" class="mobile-width-320" bgcolor="#cc3333" border="0" cellpadding="0" cellspacing="0" align="left" width="190">
+  <tr height="20">
+    <td align="left" valign="top">
+      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/brakes_icon_white.png" height="30" class="mobile-height-auto mobile-width-60pc" />
+    </td>
+  </tr>
+  <tr height="10">
+    <td align="left" valign="top">
+      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+    </td>
+  </tr>
+  <tr height="170">
+    <td align="center" valign="top">
+      <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+        <tr>
+          <td align="center" style="font-size:12px; color:#ffffff; font-family:Arial, Helvetica, sans-serif;padding-right: 10px;padding-left: 10px;" >
+            <span style="font-weight:bold;font-size:18px" class="mobile_align_center mobile-font-size-24">Brakes</span>
+            <br>
+            <br>
+            <span style="font-size:18px" class="mobile_align_center mobile-font-size-24">Service immediately</span>
+            <br>
+            <br>
+            <span>It is imperative to bring your vehicle into a service center as soon as possible.</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<%/InsertElse%>
+
+<%InsertElse expression="${((user.CustomAttribute['Brake'] == 'Y'))}" id="BrakeX_2" %>
+
+<table style="padding:0px;" class="mobile-width-320" bgcolor="#e2bd2b" border="0" cellpadding="0" cellspacing="0" align="left" width="190">
+  <tr height="20">
+    <td align="left" valign="top">
+      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/brakes_icon_black.png" height="30" class="mobile-height-auto mobile-width-60pc" />
+    </td>
+  </tr>
+  <tr height="10">
+    <td align="left" valign="top">
+      <img style="display:block;" border="0" src="https://s3-ap-southeast-1.amazonaws.com/edm2015india/Images/201508_Welcome1st_Spacer.gif" width="1" height="1" alt="" />
+    </td>
+  </tr>
+  <tr height="170">
+    <td align="center" valign="top">
+      <table style="padding:0px" border="0" cellpadding="0" cellspacing="0" align="center" height="80">
+        <tr>
+          <td align="center" style="font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;padding-right: 10px;padding-left: 10px;" >
+            <span style="font-weight:bold;font-size:18px" class="mobile_align_center mobile-font-size-24">Brakes</span>
+            <br>
+            <br>
+            <span style="font-size:18px" class="mobile_align_center mobile-font-size-24">Service soon</span>
+            <br>
+            <br>
+            <span>Visit your dealer soon to keep your brakes on their recommended maintenance schedule.</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<%/InsertElse%>
